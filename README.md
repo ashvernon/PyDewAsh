@@ -6,6 +6,8 @@ A Stardew Valley style game in Python and Pygame.\
 This includes farming and foraging, a day and night cycle, weather effects and a merchant.\
 The game was also made in Tiled.
 
+Pydew Valley RPG written in Python Pygame based on [tutorial](https://www.youtube.com/watch?v=T4IX36sP_0c&ab_channel=ClearCode)
+
 ## Run project locally
 
 ```bash
@@ -14,8 +16,6 @@ pip install pygame
 cd pydew-valley
 python code/main.py
 ```
-
-Pydew Valley RPG written in Python Pygame based on [tutorial](https://www.youtube.com/watch?v=T4IX36sP_0c&ab_channel=ClearCode)
 
 ## TODO
 
