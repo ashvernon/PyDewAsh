@@ -140,10 +140,16 @@ class Level:
             self.soil_layer.water_all()
 
         # apples on the trees
+        from sprites import Tree
         for tree in self.tree_sprites.sprites():
-            for apple in tree.apple_sprites.sprites():
-                apple.kill()
-            tree.create_fruit()
+            # only Tree objects have apple_sprites
+            if isinstance(tree, Tree):
+                # clear out old fruit
+                for apple in tree.apple_sprites.sprites():
+                    apple.kill()
+                # spawn new fruit
+                tree.create_fruit()
+
 
         # sky
         self.sky.start_color = [255, 255, 255]
